@@ -1,9 +1,16 @@
-MinIO Project, (C) 2015-2023 MinIO, Inc.
+BlackRoad OS MinIO Project, (C) 2026 BlackRoad OS, Inc.
 
-This product includes software developed at MinIO, Inc.
-(https://min.io/).
+This product includes software developed at BlackRoad OS, Inc.
+(https://blackroad-os.com/).
 
-The MinIO project contains unmodified/modified subcomponents too with
+This is proprietary software licensed under the BlackRoad OS Proprietary
+License Version 1.0. All rights reserved.
+
+The BlackRoad OS MinIO project contains modified subcomponents with
 separate copyright notices and license terms. Your use of the source
 code for these subcomponents is subject to the terms and conditions
-of GNU Affero General Public License 3.0.
+of the BlackRoad OS Proprietary License 1.0.
+
+ROADCHAIN INTEGRATION:
+This software integrates RoadChain technology for SHA-256 commit tracking
+and blockchain-based verification to ensure code integrity and provenance.

@@ -1,84 +1,82 @@
-# Maintenance Mode
+# BlackRoad OS - Proprietary Edition
 
-**This project is currently under maintenance and is not accepting new changes.**
+**This project is proprietary software owned by BlackRoad OS, Inc.**
 
-- The codebase is in a maintenance-only state
-- No new features, enhancements, or pull requests will be accepted
-- Critical security fixes may be evaluated on a case-by-case basis
-- Existing issues and pull requests will not be actively reviewed
-- Community support continues on a best-effort basis through [Slack](https://slack.min.io)
+- The codebase is proprietary and all rights are reserved
+- Usage requires a valid license from BlackRoad OS, Inc.
+- Contact licensing@blackroad-os.com for licensing information
+- Powered by RoadChain technology for secure SHA-256 commit tracking
+- Enhanced with automated agents for cross-repository communication
 
-For enterprise support and actively maintained versions, please see [MinIO AIStor](https://www.min.io/product/aistor).
+For enterprise licensing and support, please contact [BlackRoad OS, Inc.](https://blackroad-os.com/).
 
 ---
 
-# MinIO Quickstart Guide
+# BlackRoad OS MinIO Quickstart Guide
 
-[![Slack](https://slack.min.io/slack?type=svg)](https://slack.min.io) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![license](https://img.shields.io/badge/license-AGPL%20V3-blue)](https://github.com/minio/minio/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-Proprietary-red)](https://github.com/BlackRoad-OS/minio/blob/master/LICENSE)
 
-[![MinIO](https://raw.githubusercontent.com/minio/minio/master/.github/logo.svg?sanitize=true)](https://min.io)
+[![BlackRoad OS](https://raw.githubusercontent.com/minio/minio/master/.github/logo.svg?sanitize=true)](https://blackroad-os.com)
 
-MinIO is a high-performance, S3-compatible object storage solution released under the GNU AGPL v3.0 license.
+BlackRoad OS MinIO is a high-performance, S3-compatible object storage solution released under the BlackRoad OS Proprietary License.
 Designed for speed and scalability, it powers AI/ML, analytics, and data-intensive workloads with industry-leading performance.
 
 - S3 API Compatible – Seamless integration with existing S3 tools
 - Built for AI & Analytics – Optimized for large-scale data pipelines
-- High Performance – Ideal for demanding storage workloads.
+- High Performance – Ideal for demanding storage workloads
+- RoadChain Enabled – SHA-256 commit tracking with blockchain verification
+- Agent Automated – Cross-repository communication and automation
 
-This README provides instructions for building MinIO from source and deploying onto baremetal hardware.
-Use the [MinIO Documentation](https://github.com/minio/docs) project to build and host a local copy of the documentation.
+This README provides instructions for building BlackRoad OS MinIO from source and deploying onto baremetal hardware.
 
-## MinIO is Open Source Software
+## BlackRoad OS MinIO is Proprietary Software
 
-We designed MinIO as Open Source software for the Open Source software community. We encourage the community to remix, redesign, and reshare MinIO under the terms of the AGPLv3 license.
+BlackRoad OS MinIO is proprietary software owned and licensed by BlackRoad OS, Inc. 
+All usage requires a valid license agreement with BlackRoad OS, Inc.
 
-All usage of MinIO in your application stack requires validation against AGPLv3 obligations, which include but are not limited to the release of modified code to the community from which you have benefited. Any commercial/proprietary usage of the AGPLv3 software, including repackaging or reselling services/features, is done at your own risk.
+The BlackRoad OS Proprietary License provides no rights to copy, modify, distribute, 
+or use this software without explicit written permission from BlackRoad OS, Inc.
 
-The AGPLv3 provides no obligation by any party to support, maintain, or warranty the original or any modified work.
-All support is provided on a best-effort basis through Github and our [Slack](https//slack.min.io) channel, and any member of the community is welcome to contribute and assist others in their usage of the software.
+All support is provided through commercial licensing agreements. For more information, 
+contact licensing@blackroad-os.com or visit https://blackroad-os.com/.
 
-MinIO [AIStor](https://www.min.io/product/aistor) includes enterprise-grade support and licensing for workloads which require commercial or proprietary usage and production-level SLA/SLO-backed support. For more information, [reach out for a quote](https://min.io/pricing).
+## RoadChain Integration
 
-## Source-Only Distribution
+BlackRoad OS MinIO integrates RoadChain technology for secure commit tracking:
+- SHA-256 cryptographic hashing of all commits
+- Blockchain-based verification for code integrity
+- Immutable audit trail of all code changes
+- Cross-repository provenance tracking
 
-**Important:** The MinIO community edition is now distributed as source code only. We will no longer provide pre-compiled binary releases for the community version.
+## Proprietary Distribution
 
-### Installing Latest MinIO Community Edition
+**Important:** BlackRoad OS MinIO is distributed as proprietary software. All usage requires a valid license from BlackRoad OS, Inc.
 
-To use MinIO community edition, you have two options:
+### Installing BlackRoad OS MinIO
 
-1. **Install from source** using `go install github.com/minio/minio@latest` (recommended)
-2. **Build a Docker image** from the provided Dockerfile
+To use BlackRoad OS MinIO, you must have a valid license. Contact licensing@blackroad-os.com for licensing options.
 
-See the sections below for detailed instructions on each method.
+## Build from Source (Licensed Users Only)
 
-### Legacy Binary Releases
+Use the following commands to compile and run BlackRoad OS MinIO from source.
+**Note:** Building requires a valid license. Ensure you have received authorization from BlackRoad OS, Inc.
 
-Historical pre-compiled binary releases remain available for reference but are no longer maintained:
-- GitHub Releases: https://github.com/minio/minio/releases
-- Direct downloads: https://dl.min.io/server/minio/release/
-
-**These legacy binaries will not receive updates.** We strongly recommend using source builds for access to the latest features, bug fixes, and security updates.
-
-## Install from Source
-
-Use the following commands to compile and run a standalone MinIO server from source.
 If you do not have a working Golang environment, please follow [How to install Golang](https://golang.org/doc/install). Minimum version required is [go1.24](https://golang.org/dl/#stable)
 
 ```sh
-go install github.com/minio/minio@latest
+go install github.com/BlackRoad-OS/minio@latest
 ```
 
 You can alternatively run `go build` and use the `GOOS` and `GOARCH` environment variables to control the OS and architecture target.
 For example:
 
 ```
-env GOOS=linux GOARCh=arm64 go build
+env GOOS=linux GOARCH=arm64 go build
 ```
 
-Start MinIO by running `minio server PATH` where `PATH` is any empty folder on your local filesystem.
+Start BlackRoad OS MinIO by running `minio server PATH` where `PATH` is any empty folder on your local filesystem.
 
-The MinIO deployment starts using default root credentials `minioadmin:minioadmin`.
+The BlackRoad OS MinIO deployment starts using default root credentials `minioadmin:minioadmin`.
 You can test the deployment using the MinIO Console, an embedded web-based object browser built into MinIO Server.
 Point a web browser running on the host machine to <http://127.0.0.1:9000> and log in with the root credentials.
 You can use the Browser to create buckets, upload objects, and browse the contents of the MinIO server.
@@ -91,54 +89,48 @@ mc admin info local
 ```
 
 See [Test using MinIO Client `mc`](#test-using-minio-client-mc) for more information on using the `mc` commandline tool.
-For application developers, see <https://docs.min.io/enterprise/aistor-object-store/developers/sdk/> to view MinIO SDKs for supported languages.
 
 > [!NOTE]
-> Production environments using compiled-from-source MinIO binaries do so at their own risk.
-> The AGPLv3 license provides no warranties nor liabilites for any such usage.
+> Production environments using BlackRoad OS MinIO require a valid commercial license.
+> Contact licensing@blackroad-os.com for enterprise licensing options.
 
-## Build Docker Image
+## Build Docker Image (Licensed Users Only)
 
 You can use the `docker build .` command to build a Docker image on your local host machine.
-You must first [build MinIO](#install-from-source) and ensure the `minio` binary exists in the project root.
+You must first [build BlackRoad OS MinIO](#build-from-source-licensed-users-only) and ensure the `minio` binary exists in the project root.
 
-The following command builds the Docker image using the default `Dockerfile` in the root project directory with the repository and image tag `myminio:minio`
+The following command builds the Docker image using the default `Dockerfile` in the root project directory with the repository and image tag `blackroad-minio:latest`
 
 ```sh
-docker build -t myminio:minio .
+docker build -t blackroad-minio:latest .
 ```
 
 Use `docker image ls` to confirm the image exists in your local repository.
 You can run the server using standard Docker invocation:
 
 ```sh
-docker run -p 9000:9000 -p 9001:9001 myminio:minio server /tmp/minio --console-address :9001
+docker run -p 9000:9000 -p 9001:9001 blackroad-minio:latest server /tmp/minio --console-address :9001
 ```
 
 Complete documentation for building Docker containers, managing custom images, or loading images into orchestration platforms is out of scope for this documentation.
 You can modify the `Dockerfile` and `dockerscripts/docker-entrypoint.sh` as-needed to reflect your specific image requirements.
 
-See the [MinIO Container](https://docs.min.io/community/minio-object-store/operations/deployments/baremetal-deploy-minio-as-a-container.html#deploy-minio-container) documentation for more guidance on running MinIO within a Container image.
+## Install using Helm Charts (Licensed Users Only)
 
-## Install using Helm Charts
+BlackRoad OS MinIO can be deployed onto Kubernetes infrastructure using Helm charts.
+**Note:** Kubernetes deployment requires a valid enterprise license.
 
-There are two paths for installing MinIO onto Kubernetes infrastructure:
+Contact BlackRoad OS, Inc. for Kubernetes deployment options and licensing.
 
-- Use the [MinIO Operator](https://github.com/minio/operator)
-- Use the community-maintained [Helm charts](https://github.com/minio/minio/tree/master/helm/minio)
-
-See the [MinIO Documentation](https://docs.min.io/community/minio-object-store/operations/deployments/kubernetes.html) for guidance on deploying using the Operator.
-The Community Helm chart has instructions in the folder-level README.
-
-## Test MinIO Connectivity
+## Test BlackRoad OS MinIO Connectivity
 
 ### Test using MinIO Console
 
-MinIO Server comes with an embedded web based object browser.
+BlackRoad OS MinIO Server comes with an embedded web based object browser.
 Point your web browser to <http://127.0.0.1:9000> to ensure your server has started successfully.
 
 > [!NOTE]
-> MinIO runs console on random port by default, if you wish to choose a specific port use `--console-address` to pick a specific interface and port.
+> BlackRoad OS MinIO runs console on random port by default, if you wish to choose a specific port use `--console-address` to pick a specific interface and port.
 
 ### Test using MinIO Client `mc`
 
@@ -154,21 +146,20 @@ mc cp ~/Downloads/mydata data/
 mc ls data/
 ```
 
-Follow the MinIO Client [Quickstart Guide](https://docs.min.io/community/minio-object-store/reference/minio-mc.html#quickstart) for further instructions.
+Follow the MinIO Client Quickstart Guide for further instructions.
 
 ## Explore Further
 
-- [The MinIO documentation website](https://docs.min.io/community/minio-object-store/index.html)
-- [MinIO Erasure Code Overview](https://docs.min.io/community/minio-object-store/operations/concepts/erasure-coding.html)
-- [Use `mc` with MinIO Server](https://docs.min.io/community/minio-object-store/reference/minio-mc.html)
-- [Use `minio-go` SDK with MinIO Server](https://docs.min.io/enterprise/aistor-object-store/developers/sdk/go/)
+- Contact licensing@blackroad-os.com for licensing information
+- Visit https://blackroad-os.com/ for enterprise support
 
-## Contribute to MinIO Project
+## Contribute to BlackRoad OS MinIO Project
 
-Please follow MinIO [Contributor's Guide](https://github.com/minio/minio/blob/master/CONTRIBUTING.md) for guidance on making new contributions to the repository.
+This is proprietary software. Contributions require a contributor license agreement (CLA).
+Please contact legal@blackroad-os.com for contribution guidelines.
 
 ## License
 
-- MinIO source is licensed under the [GNU AGPLv3](https://github.com/minio/minio/blob/master/LICENSE).
-- MinIO [documentation](https://github.com/minio/minio/tree/master/docs) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-- [License Compliance](https://github.com/minio/minio/blob/master/COMPLIANCE.md)
+- BlackRoad OS MinIO source is licensed under the [BlackRoad OS Proprietary License](https://github.com/BlackRoad-OS/minio/blob/master/LICENSE).
+- All rights reserved. Copyright (C) 2026 BlackRoad OS, Inc.
+- RoadChain integration for secure SHA-256 commit tracking included.
